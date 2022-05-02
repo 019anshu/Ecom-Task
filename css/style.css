@@ -326,8 +326,8 @@ header .fa-bars {
     gap: 1.5rem;
     align-items: center;
     background-image: url(../images/login.jpg);
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 
@@ -372,9 +372,71 @@ header .fa-bars {
 
 .login .row form a {
     resize: none;
+    color: #e84393;
     text-align: center;
     padding: 1rem;
     font-size: 16px;
+}
+
+.login .row form a:hover {
+    color: #000;
+}
+
+.register .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.register .row form {
+    flex: 1 1 40rem;
+    display: grid;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.register .row .image {
+    flex: 1 1 40rem;
+}
+
+.register .row .image img {
+    width: 80%;
+}
+
+.register .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.register .row form .box:focus {
+    border-color: var(--pink);
+}
+
+.register .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.register .row form a {
+    resize: none;
+    color: #e84393;
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.register .row form a:hover {
+    color: #000;
 }
 
 .footer .box-container {
