@@ -222,14 +222,25 @@ header .fa-bars {
 
 .products .box-container .box .image .icons {
     position: absolute;
-    bottom: -7rem;
+    bottom: -24rem;
     left: 0;
     right: 0;
+    display: grid;
+}
+
+.products .box-container .box .image .icons .links {
     display: flex;
 }
 
 .products .box-container .box:hover .image .icons {
     bottom: 0;
+}
+
+.products .box-container .box .image .icons p {
+    font-size: 1.5rem;
+    background: #fff;
+    color: var(--pink);
+    padding: 2rem 1rem;
 }
 
 .products .box-container .box .image .icons a {

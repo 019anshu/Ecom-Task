@@ -28,44 +28,32 @@
 
         <nav class="navbar">
             <a href="/index.html">Home</a>
-            <!-- <a href="/about.html">about</a> -->
             <a href="/product.html">Products</a>
-            <!-- <a href="#review">review</a> -->
             <a href="/contact.html">Contact</a>
             <a href="/login.html">Login/Register</a>
         </nav>
-
-        <!-- <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-user"></a>
-        </div> -->
 
     </header>
 
     <!-- header section ends -->
 
-
-
     <!-- contact section starts  -->
 
     <section class="login" id="contact">
 
-        <h1 class="heading"> <span> Login </span>  </h1>
+        <h1 class="heading"> <span> Login </span> </h1>
 
         <div class="row">
-            
+
             <form name="form1" onSubmit="validation(this)" action="">
-                <!-- <label for="email">Enter your Email-id: </label> -->
                 <input type="text" placeholder="Email-id" name="email" class="box" required><br>
-                <!-- <label for="password">Enter your password: </label> -->
                 <input type="password" placeholder="Password" name="password" class="box" required>
                 <input type="submit" value="Login" class="btn">
-                <a href="/register.html">Not registered yet ?</a>
+                <a href="/register.html">Not registered yet ? Register Now</a>
             </form>
             <div class="image">
                 <!-- <img src="images/meds.jpg" alt=""> -->
-            </div>            
+            </div>
 
         </div>
 
@@ -82,9 +70,7 @@
             <div class="box">
                 <h3>Quick Links</h3>
                 <a href="#">Home</a>
-                <!-- <a href="#">about</a> -->
                 <a href="#">Products</a>
-                <!-- <a href="#">review</a> -->
                 <a href="#">Contact</a>
             </div>
 
@@ -100,7 +86,6 @@
                 <a href="#">India</a>
                 <a href="#">USA</a>
                 <a href="#">Japan</a>
-                <!-- <a href="#">france</a> -->
             </div>
 
             <div class="box">
@@ -112,8 +97,6 @@
             </div>
 
         </div>
-
-        <!-- <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div> -->
 
     </section>
 
@@ -127,7 +110,6 @@
         var password = form1.password.value;
 
         //E-mail id (should not contain any invalid and must follow the standard pattern name@domain.com) 
-
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             window.alert("Invalid email address!")
         }
