@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Login</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -49,24 +49,23 @@
 
     <!-- contact section starts  -->
 
-    <section class="contact" id="contact">
+    <section class="login" id="contact">
 
-        <h1 class="heading"> <span> Contact </span> Us </h1>
+        <h1 class="heading"> <span> Login/Register </span>  </h1>
 
         <div class="row">
-
+            
             <form name="form1" onSubmit="validation(this)" action="">
-                <input type="text" placeholder="Name" name="name" class="box" required>
-                <input type="number" placeholder="Phone Number" name="number" class="box" required>
-                <input type="email" placeholder="Email" name="email" class="box" required>
-                <textarea name="" class="box" placeholder="Comments" id="" cols="30" rows="10" required></textarea>
-                <input type="submit" value="Submit" class="btn">
-                <input type="reset" value="Reset" class="btn">
+                <!-- <label for="email">Enter your Email-id: </label> -->
+                <input type="text" placeholder="Email-id" name="email" class="box" required><br>
+                <!-- <label for="password">Enter your password: </label> -->
+                <input type="password" placeholder="Password" name="password" class="box" required>
+                <input type="submit" value="Login" class="btn">
+                <a href="">Not registered yet ?</a>
             </form>
-
             <div class="image">
-                <img src="images/meds.jpg" alt="">
-            </div>
+                <!-- <img src="images/meds.jpg" alt=""> -->
+            </div>            
 
         </div>
 
@@ -124,15 +123,8 @@
 <script language="JAVASCRIPT">
     function validation(form1) {
         var return_value = true;
-        var name = form1.name.value;
-        var number = form1.number.value;
         var email = form1.email.value;
-
-        //First Name (Name should contains alphabets and the length should not be less than 6 characters). 
-        if (name.length < 6) {
-            return_value = false;
-            window.alert("Name should not be less than 6 characters!");
-        }
+        var password = form1.password.value;
 
         //E-mail id (should not contain any invalid and must follow the standard pattern name@domain.com) 
 
@@ -141,9 +133,9 @@
         }
 
         //Mobile Number (Phone number should contain 10 digits only). 
-        if (number.length != 10) {
+        if (password.length < 8) {
             return_value = false;
-            window.alert("Mobile number must be of 10 digit!");
+            window.alert("password must be of atleast 8 character!");
         }
 
         return return_value;
